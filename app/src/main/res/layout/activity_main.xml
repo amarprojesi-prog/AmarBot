@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent"
+    android:orientation="vertical" android:padding="24dp" android:background="#FFF0F5">
+    <TextView android:layout_width="match_parent" android:layout_height="wrap_content"
+        android:text="Amar Bot" android:textSize="28sp" android:textStyle="bold"
+        android:textColor="#E91E8C" android:gravity="center" android:layout_marginTop="32dp"/>
+    <TextView android:id="@+id/tvStatus" android:layout_width="match_parent"
+        android:layout_height="wrap_content" android:text="Pasif" android:textSize="16sp"
+        android:textColor="#E91E8C" android:gravity="center" android:layout_marginTop="16dp"/>
+    <Button android:id="@+id/btnAccessibility" android:layout_width="match_parent"
+        android:layout_height="56dp" android:layout_marginTop="24dp"
+        android:text="Erisebilirlik Izni Ver" android:background="#673AB7" android:textColor="#FFFFFF"/>
+    <Button android:id="@+id/btnToggle" android:layout_width="match_parent"
+        android:layout_height="56dp" android:layout_marginTop="12dp"
+        android:text="Botu Baslat" android:background="#E91E8C" android:textColor="#FFFFFF"/>
+    <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+        android:text="Son Islemler:" android:layout_marginTop="16dp" android:textColor="#999"/>
+    <ScrollView android:layout_width="match_parent" android:layout_height="0dp" android:layout_weight="1">
+        <TextView android:id="@+id/tvLog" android:layout_width="match_parent"
+            android:layout_height="wrap_content" android:padding="8dp"
+            android:text="Baslatilmadi." android:textSize="11sp" android:fontFamily="monospace"/>
+    </ScrollView>
+</LinearLayout>
