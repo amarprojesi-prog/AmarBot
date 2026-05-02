@@ -107,7 +107,7 @@ class AmarAccessibilityService : AccessibilityService() {
             val br = Rect(); n.getBoundsInScreen(br)
             n.isClickable && br.left > w*0.7 && br.top > h*0.75
         }
-        send?.performAction(AccessibilityNodeInfo.ACTION_CLICK) ?: input.performAction(AccessibilityNodeInfo.ACTION_IME_ENTER)
+        send?.performAction(AccessibilityNodeInfo.ACTION_CLICK) ?: input.performAction(android.view.inputmethod.EditorInfo.IME_ACTION_DONE)
         log("Gonderildi!")
         handler.postDelayed({ state = "BACK" }, 600)
     }
