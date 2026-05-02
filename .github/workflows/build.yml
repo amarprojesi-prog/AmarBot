@@ -16,7 +16,7 @@ jobs:
           chmod +x gradlew 2>/dev/null || true
           gradle assembleDebug
       - name: Upload APK
-        uses: actions/upload-artifact@v3
+        uses: actions/upload-artifact@v4
         with:
           name: AmarBot-debug
           path: app/build/outputs/apk/debug/*.apk
